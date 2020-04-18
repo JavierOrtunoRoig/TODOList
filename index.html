@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
+    </head>
+
+    <body class="ft-size">
+
+        <div class="container-fluid" style="margin-top: 5%;">
+            <div class="row" style="margin-bottom: 5%;">
+
+                <div class="col-1"></div>
+                <div class="col-4 bg bg-dark" style="height: 5px; margin-top: 25px;"></div>
+                <div class="col-2 text-center"><h1>TO DO LIST</h1></div>
+                <div class="col-4 bg bg-dark" style="height: 5px; margin-top: 25px;"></div>
+                <div class="col-1"></div>
+            </div>
+
+
+            <div class="row" style="height:2em; margin-bottom: 2%;" id="introducir">
+
+                <div class="col-1"></div>
+
+                <div class="col-1">
+                    <button class="btn btn-info tam-boton" onclick="add()">Añadir</button>
+                </div>
+
+                <div class="col-9 ml-3">
+                    <label class="tam-boton">
+                        <input id="input" type="text" id="newTask" class="border border-dark tam-boton" placeholder =" Escribe aquí tu tarea">
+                    </label>
+                </div>
+
+            </div>
+
+
+
+            <div class="container-fluid" id=list>
+                
+
+
+                <!-- <div class="row">
+                    <div class="col-12">
+                        <br>
+                    </div>
+    
+                    <div class="col-1">
+                        <button class="btn btn-danger tam-boton" onclick="remove()"> Elimnar</button>
+                    </div>
+    
+                    <div class="col-10 ml-3 border border-dark">
+                        <p class="text-center" style="word-break: break-all;">sds</p>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+                
+    
+    <script src="./assets/scripts/index.js"></script>    
+    </body>
+
+</html>
