@@ -13,19 +13,23 @@ function remove(element) {
 function add () {
 
     let texto = document.getElementById("input").value;
-    document.getElementById("input").value = ""; 
 
-    let añadir = document.getElementById("list");
-
+    if (texto === "") {
+        alert("No ha escrito nada.");
+    } else {
+        texto = document.getElementById("input").value;
+        document.getElementById("input").value = ""; 
     
-    let node = document.createElement("div");
-    node.className= "row";
-    node.id = "task " + añadir.childElementCount;
+        let añadir = document.getElementById("list");
     
-    
-    node.innerHTML = "<div class=\"col-12\"><br></div><div class=col-1></div><div class=\"col-1\"><button class=\"btn btn-danger tam-boton\" onclick=\"remove(this)\"\"> Elimnar</button></div><div class=\"col-9 ml-3 border border-dark\"><p class=text-center style=\"word-break: break-all\";>" + texto + "</p></div>"
-    
-    añadir.appendChild(node);
-    
-    console.log(añadir);
+        
+        let node = document.createElement("div");
+        node.className= "row";
+        node.id = "task " + añadir.childElementCount;
+        
+        
+        node.innerHTML = "<div class=\"col-12\"><br></div><div class=col-1></div><div class=\"col-1\"><button class=\"btn btn-danger tam-boton\" onclick=\"remove(this)\"\"> Elimnar</button></div><div class=\"col-9 ml-3 border border-dark\"><p class=text-center style=\"word-break: break-all\";>" + texto + "</p></div>"
+        
+        añadir.appendChild(node);
+    }
 }
