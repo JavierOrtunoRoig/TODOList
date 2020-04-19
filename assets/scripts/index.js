@@ -28,7 +28,7 @@ function add () {
         node.id = "task " + añadir.childElementCount;
         
         
-        node.innerHTML = "<div class=\"col-12\"><br></div><div class=col-1></div><div class=\"col-1\"><button class=\"btn btn-danger tam-boton\" onclick=\"remove(this)\"\"> Elimnar</button></div><div class=\"col-9 ml-3 border border-dark\"><p class=text-center style=\"word-break: break-all\";>" + texto + "</p></div>"
+        node.innerHTML = "<div class=\"col-12\"><br></div><div class=col-md-1></div><div class=\"col-md-2 col-lg-1 pr-0\"><button class=\"btn btn-danger tam-boton\" onclick=\"remove(this)\"\"> Elimnar</button></div><div class=\"col-md-8 col-lg-9 ml-3 border border-dark\"><p class=text-center style=\"word-break: break-all\";>" + texto + "</p></div>"
         
         añadir.appendChild(node);
     }
